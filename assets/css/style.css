@@ -18,9 +18,7 @@ body{
     color: #fff !important;
 }
 
-.navbar{
-    color: transparent !important;
-}
+
 
 .slide img{
     height: 90vh;
@@ -34,4 +32,16 @@ div i{
     font-size: 2rem;
     text-align: center;
 }
+
+div .card-title{
+    color: #fff;
+    font-weight: 700
+}
+
+div .card-text{
+    color: #fff;
+    font-weight: 400
+}
+
+
 
