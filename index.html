@@ -75,10 +75,10 @@
     </div>
 
     <!--quienes somos-->
-    <h2 class="p-5 text-center">QUIÉNES SOMOS</h2>
+    <h2 id="titulo-qs" class="p-5 text-center" ondblclick="cambiarEstilo()">QUIÉNES SOMOS</h2>
 
-    <div class="container">
-        <div class="row p-">
+    <div id="texto-qs" class="container">
+        <div class="row">
             <div class="col-xs-12 col-sm-4 pb-5">
                 <div class="p-2 bg-info text-center">
 
@@ -103,7 +103,7 @@
                 <a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde id odit odio consequuntur, totam
                     sapiente! Porro harum assumenda, consequatur aut error totam modi deserunt, sapiente atque, nemo
                     quaerat excepturi saepe?</a>
-
+                <div><br></div>
                 <div class="p-2 bg-info text-center">
                     <i class="fa-solid fa-earth-americas"></i>
                 </div>
@@ -190,11 +190,35 @@
             <label for="comment">Mensaje</label>
             <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
 
-            <button type="submit" class="btn btn-primary my-4">enviar</button>
+            <button id="botonEnviar" class="btn btn-primary my-4" onclick="mostrarAlerta()">Enviar</button>
         </form>
     </div>
 
     <!--footer-->
+
+    <footer>
+        <div class="container-fluid bg-info p-4">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="bg-info text-center">
+                        <a href="#" class="text-decoration-none">
+                            <a id="texto-footer">VIAJES CHILE</a>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="bg-info text-center">
+                        <i class="fa-brands fa-facebook p-2"></i>
+                        <i class="fa-brands fa-twitter p-2"></i>
+                        <i class="fa-brands fa-linkedin p-2"></i>
+                        <i class="fa-brands fa-github p-2"></i>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -208,6 +232,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+   
+        <script src="assets/js/index.js"></script>
 </body>
 
 </html>
